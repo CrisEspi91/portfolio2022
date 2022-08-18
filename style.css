@@ -169,6 +169,10 @@ body{
 .proyecto-img{
     width: 50%;   
 }
+.linkProyecto{
+    font-size: 35px;
+    margin-top: 20px;
+}
 .proyecto-img img{
     object-fit:cover;
     height: 100%;
