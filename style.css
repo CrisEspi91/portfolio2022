@@ -47,8 +47,8 @@ body{
     top: 30px;
     right: 30px;
     background: white;
-    width: 35px;
-    height: 35PX;
+    width: 45px;
+    height: 45PX;
     cursor: pointer;
     border-radius: 10PX;
     border: solid 2px #6e6e6e3d;
@@ -59,27 +59,33 @@ body{
     position: fixed;
     top: 0;
     right: 0;
-    width: 30vw;
+    width: 250px;
     height: 100%;
     background-image: linear-gradient(-225deg,#503272 20%,  #000000 99%);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    padding-left: 50px;
     box-shadow: 0 0 6px rgba(0,0,0,.5);
     transition: transform .3s ease-in-out;
-    transform: translate(110%);
+    transform: translate(100%);
     z-index: 100;
+    font-size: 20px;
 
 }
 
 .spread{
-    transform: translate(0);
+    transform: translate(30%);
 }
 
 .menu-nav a{
     color: white;
     text-decoration: none;
+}
+
+.menu-icon{
+    font-size: 30px;
 }
 
 .titulo{
@@ -112,16 +118,15 @@ body{
     font-weight: 800;
     box-shadow: 0 0 6px rgba(0,0,0,.5);
     color: #f2f2f2;
-    transition: all 0.4s;
 }
-
+.button:hover{
+    background: linear-gradient(-225deg, #CC85B8 0%, #503272 100%);
+}
 .buttonHead{
     width: 90%;
 }
 
-.button:hover{
-    background: linear-gradient(-225deg, #CC85B8 0%, #503272 100%);
-}
+
 .masInfo{
     width: 40%;
     margin: 60px 0 0 3px;
@@ -142,64 +147,68 @@ body{
 /* portafolio */
 .portafolio-contenedor{
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
+    padding: 20px;
 }
 .proyecto{
-   width: 98%;
+   min-width: 290px;
+   height: 250px;
+   margin: 15px;
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
+   flex-direction: column;
    align-items: center;
    flex-wrap: wrap;
-   border-radius: 5px;
+   border-radius: 4px 40px 40px 40px;
+   background-color: #ffffffd3;
     margin: 20px 0 20px 0;
     transition: .5s;
-    filter: grayscale(1);
-    box-shadow: 0 0 6px #503272 !important;
-    
+    box-shadow: 0 0 6px #503272;
+    position: relative;
+    overflow: hidden;
 }
 .proyecto:hover{
-    box-shadow: 0 0 6px rgba(15, 125, 159, 0.5);
-    filter: grayscale(0);
+    background-color: #00000000;
+    color: #6e6e6e00;
+}
+.proyecto img{
+    height: 25%;
+    width: 100%;   
+    bottom: 0;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0.2;
 }
 
-
-.proyecto-img{
-    width: 50%;   
-}
 .linkProyecto{
     font-size: 35px;
     margin-top: 20px;
 }
-.proyecto-img img{
-    object-fit:cover;
-    height: 100%;
-    width: 100%;   
-    max-height: 150px;
-    margin-bottom: -5px;
-    opacity: 0.5;
-    
-}
-
 
 .proyecto-info{
     margin: 10px 0 0 20px;
     color: #6e6e6e;
+    position: absolute;
+}
+.proyecto-info h3{
+    color: #503272;
+    margin-bottom: 20px;
 }
 
 
 .proyecto-icon{
     font-size: 25px;
-    margin: 0 5px 0 0;
     text-decoration: none;
     color: #503272;
     transition: .6s;
+
 }
-.proyecto-icon:hover{
-    color: #503272 ;
-}
+
+
+
 /* Mis servicios */
 
 .subtitulo{
@@ -211,9 +220,7 @@ body{
     text-align: left;
 }
 
-.checklist{
-    width: 45%;
-}
+
 
 .service{
     display: flex;
@@ -227,7 +234,7 @@ body{
 .service img {
     margin-top: 10px;
     margin-bottom: 0;
-    width: 40%;
+    width: 50%;
     border-radius: 50%;
     box-shadow: 0 0 6px rgba(0,0,0,.5);
 }
