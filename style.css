@@ -28,7 +28,8 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    background: rgb(80,50,114);
+background: linear-gradient(353deg, rgba(80,50,114,1) 0%, rgba(242,242,242,1) 39%);
 }
 
 .head{
