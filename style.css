@@ -17,7 +17,6 @@ body{
 .contenedor{
     width: 90%;
     max-width: 1200px;
-    overflow: hidden;
     margin: auto;
     padding: 60px 0;
 }
@@ -34,12 +33,11 @@ background: linear-gradient(353deg, rgba(80,50,114,1) 0%, rgba(242,242,242,1) 39
 
 .head{
     padding: 0;
-    height: 110% ;
+    height: 100vh ;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: aliceblue;
     text-align: center;
 }
 
@@ -53,6 +51,7 @@ background: linear-gradient(353deg, rgba(80,50,114,1) 0%, rgba(242,242,242,1) 39
     cursor: pointer;
     border-radius: 10PX;
     z-index: 100;
+    color: #503272;
 }
 
 .menu-nav{
@@ -105,32 +104,33 @@ background: linear-gradient(353deg, rgba(80,50,114,1) 0%, rgba(242,242,242,1) 39
     font-weight: 100;
     font-size: 25px;
     color: #6e6e6e;
-    text-align: left;
+    text-align: center;
 }
 
 .button{
-    background: linear-gradient(-225deg, #503272 0%, #CC85B8 100%);
     width: 90%;
-    height: 40px;
+    padding: 6px 0;
     margin-top: 70px;
     border-radius: 20px;
-    border-style: none;
     font-weight: 900;
     box-shadow: 0 0 6px rgba(0,0,0,.5);
     color: #f2f2f2;
+    text-decoration: none;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 2s;
+    background: linear-gradient(-225deg, #9e688f 0%, #503272 100%);
+
 }
-.button:hover{
-    background: linear-gradient(-225deg, #CC85B8 0%, #503272 100%);
-}
-.buttonHead{
-    width: 90%;
+
+.button background:hover{
+    background: linear-gradient(-225deg, #25021c 0%, #503272 100%);
+
 }
 
 
-.masInfo{
-    width: 40%;
-    margin: 60px 0 0 3px;
-}
 
 
 .contenedor-wide{
