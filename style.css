@@ -150,9 +150,10 @@ main{
     padding-left: 5%; 
 }
 .saludo img{
-    width: 150px;
+    width: 240px;
     border-radius: 6100%;
     box-shadow: 0px 8px 14px -4px #c05da4b7, 0px -4px 18px -4px #c05da4b7;
+    margin-bottom: 30px;
 }
 .saludo h2{
     margin-top: 20px;
