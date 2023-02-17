@@ -151,7 +151,7 @@ main{
 }
 .saludo img{
     width: 240px;
-    border-radius: 6100%;
+    border-radius: 100%;
     box-shadow: 0px 8px 14px -4px #c05da4b7, 0px -4px 18px -4px #c05da4b7;
     margin-bottom: 30px;
 }
