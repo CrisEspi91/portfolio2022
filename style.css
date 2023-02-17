@@ -93,6 +93,9 @@ background: linear-gradient(360deg, #290837 0%, rgba(242,242,242,1) 40%);
     font-size: 30px;
 }
 
+main{
+    background-color: #290837;
+}
 .titulo{
   font-size: 60px;
   margin-bottom: 15px;   
@@ -120,7 +123,7 @@ background: linear-gradient(360deg, #290837 0%, rgba(242,242,242,1) 40%);
     border-radius: 20px;
     font-weight: 200;
     box-shadow: 0 0 6px rgba(0,0,0,.5);
-    color: #f2f2f2;
+    color:#d7d7d7;
     text-decoration: none;
     letter-spacing: 2px;
     display: flex;
@@ -138,28 +141,33 @@ background: linear-gradient(360deg, #290837 0%, rgba(242,242,242,1) 40%);
 }
 
 
-
-
-.contenedor-saludo{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 50px 0;
-}
-.contenedor-servicio{
-    width: 50%;
-}
-.contenedor-servicio .servicio{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
 .saludo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-size: 20px;
-    max-width: 550px;
-    padding-left: 5%;
+    padding-left: 5%; 
 }
-
+.saludo img{
+    width: 150px;
+    border-radius: 6100%;
+    box-shadow: 0px 8px 14px -4px #c05da4b7, 0px -4px 18px -4px #c05da4b7;
+}
+.saludo h2{
+    margin-top: 20px;
+    color: #d7d7d7;
+    margin-left: 0;
+    font-size: 40px;
+}
+.saludo p{
+    color: #d7d7d7;
+    max-width: 450px;
+    text-align: center;
+}
+.saludo a{
+    width: 20%;
+}
 /* portafolio */
 
 .portafolio-contenedor{
@@ -189,7 +197,7 @@ background: linear-gradient(360deg, #290837 0%, rgba(242,242,242,1) 40%);
     opacity: 0.8;
 }
 .proyecto:hover{
-    background-color: #00000000;
+    background-color: #f2f2f2;
     color: #6e6e6e00;
     opacity: 1;
 }
@@ -306,24 +314,6 @@ background: linear-gradient(360deg, #290837 0%, rgba(242,242,242,1) 40%);
     margin-left: 10%;
 }
 
-
-
-.servicio{
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    flex-direction: column;
-}
-
-.servicio img {
-    margin-top: 10px;
-    margin-bottom: 0;
-    width: 50%;
-    border-radius: 130px;
-    box-shadow: 0 0 6px rgba(0,0,0,.5);
-}
 
 .gallery{
     color: #f2f2f2;
@@ -530,18 +520,8 @@ footer h6{
     }
    .proyecto{
     filter: grayscale(0);
-    margin-top: 30px;
+    margin: 30px 20px;
    }
-    .service{
-        align-items: inherit;
-    }
-  
-    .contenedor-servicio img{
-        width: 150%;
-        margin-bottom: 10px;
-        margin-top: 70px;
-        margin-left: 3px;
-    }
     .saludo{
         display: flex;
         justify-content: center;
@@ -551,6 +531,9 @@ footer h6{
     }
     .saludo p{
         text-align: center;
+    }
+    .saludo a{
+        width: 50%;
     }
     .contenedor-saludo{
        flex-direction: column;
